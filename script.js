@@ -252,3 +252,44 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelector('.slides');
+    const slideImages = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function showNextSlide() {
+        currentIndex++;
+        if (currentIndex >= slideImages.length) {
+            currentIndex = 0;
+        }
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
+});
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelector('.slides');
+    const slideImages = document.querySelectorAll('.slide');
+    let currentIndex = 0;
+
+    function showNextSlide() {
+        currentIndex++;
+        if (currentIndex >= slideImages.length) {
+            currentIndex = 0;
+        }
+        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    setInterval(showNextSlide, 10000); // Change slide every 5 seconds
+});
+
+
+
