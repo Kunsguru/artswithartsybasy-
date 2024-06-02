@@ -33,12 +33,13 @@
         margin-top: 20px;
         border-radius: 50%;
         align-item: center;
+        margin: 0 auto;
 
         }
 
          header div hi {
          display: flex;
-         margin-top: -40%;
+         margin-top: -20%;
          
          font-weight: 900;
         } 
