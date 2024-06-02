@@ -19,12 +19,9 @@
         /*------- to prevent users from copying intellectual property of the webpage----*/
         
         
-        
-        
-        
         header {
             background-color: #f2f2f2;
-            padding: 12px;
+            padding: 7px;
             text-align: center;
             position: fixed;
             top: 0;
@@ -33,7 +30,7 @@
         }
         
         header div img {
-        margin-top: 5px;
+        margin-top: 20px;
         border-radius: 50%;
         align-item: center;
 
@@ -41,7 +38,7 @@
 
          header div hi {
          display: flex;
-         margin-top: -5%;
+         margin-top: -40%;
          
          font-weight: 900;
         } 
@@ -57,7 +54,7 @@
             margin: 0 10px;
             font-weight: 800;
             text-decoration: none;
-            
+            margin-bottom: 20px;
             
             padding: 2px;
             width: 100%;
@@ -66,6 +63,9 @@
             color: #333;
             font-weight: bold;
         }
+        
+        
+        
         
         .container {
             display: flex;
