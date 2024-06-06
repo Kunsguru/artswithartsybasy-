@@ -252,44 +252,56 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelector('.slides');
-    const slideImages = document.querySelectorAll('.slide');
-    let currentIndex = 0;
-
-    function showNextSlide() {
-        currentIndex++;
-        if (currentIndex >= slideImages.length) {
-            currentIndex = 0;
-        }
-        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    setInterval(showNextSlide, 3000); // Change slide every 3 seconds
-});
 
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+            function showContent(sectionId) {
+                var preloader = document.getElementById('preloader');
+                var sections = document.querySelectorAll('.content-section');
 
+                preloader.style.display = 'none';
 
+                sections.forEach(function (section) {
+                    section.style.display = 'none';
+                });
 
+                var activeSection = document.getElementById(sectionId);
+                if (activeSection) {
+                    activeSection.style.display = 'block';
+                }
+            }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const slides = document.querySelector('.slides');
-    const slideImages = document.querySelectorAll('.slide');
-    let currentIndex = 0;
+            function hideContent() {
+                var preloader = document.getElementById('preloader');
+                var sections = document.querySelectorAll('.content-section');
 
-    function showNextSlide() {
-        currentIndex++;
-        if (currentIndex >= slideImages.length) {
-            currentIndex = 0;
-        }
-        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
+                sections.forEach(function (section) {
+                    section.style.display = 'none';
+                });
 
-    setInterval(showNextSlide, 10000); // Change slide every 5 seconds
-});
+                preloader.style.display = 'flex';
+            }
 
+            var navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent default anchor behavior
 
+                    var targetSection = link.getAttribute('href').substring(1);
+
+                    hideContent();
+
+                    setTimeout(function () {
+                        showContent(targetSection);
+                    }, 1000); // Simulate loading delay
+                });
+            });
+
+            // Show the initial content
+            setTimeout(function () {
+                showContent('home');
+            }, 1000); // Initial load delay
+        });
 
