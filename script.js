@@ -106,8 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById(modalId).classList.add('hidden');
     };
 
-
-// Contact form submission
+    // Contact form submission
     window.submitContactForm = function(event) {
         event.preventDefault();
         const form = document.getElementById('contactForm');
@@ -471,8 +470,5 @@ document.querySelector('.prev').addEventListener('click', () => {
 document.querySelector('.next').addEventListener('click', () => {
     gallery.scrollLeft += gallery.clientWidth;
 });
-
-        
-
 
 
