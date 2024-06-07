@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Artsybasy</title>
-    
-    	          
-<link rel="stylesheet" href="styles.css">
+    <style>
+    	
 
-    
-
+    </style>
 </head>
 <body>
     <header>
-    	<div><img src="/IMG-20240510-WA0256.jpg" width="70px"></div>
+    	<div><img src="/storage/emulated/0/Pictures/WhatsApp/IMG-20240510-WA0256.jpg" width="70px"></div>
         <h1>Arts with Artsybasy</h1>
         <nav>
         
@@ -119,66 +117,51 @@ painting, and art education, Nyong has garnered acclaim both locally and interna
         	<br>
         	<br>
        
-        <div class="content1111">
-        <div class="feature"><section id="gallerySection"><width="100%">
-        	
-            <h2>Gallery</h2>
-            <p>Take a moment to explore the vibrant gallery filled with captivating artwork. Each piece tells its own unique story, inviting you to immerse yourself in a world of creativity and imagination!</p>
-            <button onclick="openGalleryModal()">View Gallery</button>
-        </section>
+<div class="content1111">
+        <div class="feature">
+            <section id="gallerySection">
+                <h2>Gallery</h2>
+                <p>Take a moment to explore the vibrant gallery filled with captivating artwork. Each piece tells its own unique story, inviting you to immerse yourself in a world of creativity and imagination!</p>
+                <button onclick="openGalleryModal()">View Gallery</button>
+            </section>
         </div>
     </div>
     
                 
+				<div class="content1111">
+        <section id="gallery-overlay" class="gallery-overlay">
+            <div class="gallery-wrapper">
+                <button class="prev">❮</button>
+                <div class="gallery-container">
+                    <div class="gallery-item"><img src="/storage/emulated/0/Pictures/Screenshot/Screenshot_20240606-110030.jpg" class="gallery-image" alt="Image 1"></div>
+                    
+                    <div class="gallery-item"><img src="/storage/emulated/0/Pictures/Screenshot/Screenshot_20240606-102323.jpg" class="gallery-image" alt="Image 2"></div>
+                    
+                    <div class="gallery-item"><img src="/storage/emulated/0/Pictures/Screenshot/Screenshot_20240606-084308.jpg" class="gallery-image" alt="Image 3"></div>
+                  
+  <div class="gallery-item"><img src="/storage/emulated/0/Pictures/Screenshot/Screenshot_20240606-083617.jpg" class="gallery-image" alt="Image 4"></div>
+                   
+ <div class="gallery-item"><img src="/storage/emulated/0/Pictures/Screenshot/Screenshot_20240606-055500.jpg" class="gallery-image" alt="Image 5"></div>
+                
+    <div class="gallery-item"><img src="/storage/emulated/0/Pictures/Screenshot/Screenshot_20240606-045732.jpg" class="gallery-image" alt="Image 6"></div>
+                </div>
+                <button class="next">❯</button>
+            </div>
+            <button class="nav-button" id="back-to-gallery" onclick="closeGalleryModal()">Back to Gallery</button>
+        </section>
+    </div>		
+						
+		<!---- original image gallery---->				
+						
+						
+						
+						
+						
+						
 						
 						
 
-<div class="content1111">
-    <section id="gallery-overlay" class="gallery-overlay">
-        <div class="gallery">
-        	        <br>
 
-   
-        
-        <br>
-		<br>
-						<br>
-							<br>
-										<br>
-						
-            <img src="/IMG-20240510-WA0256.jpg" width="85px"  alt="Image 0" class="gallery-item" data-index="0">
-        
-        <img src="/Screenshot_20240510-193459.jpg" width="85px" alt="Image 1" class="gallery-item" data-index="1">
- 
- <img src="/Screenshot_20240511-172226.jpg " width="85px"  alt="Image 2" class="gallery-item" data-index="2" >
- 
- 
-       <img src="/Screenshot_20240511-172208.jpg" width="85px" alt="Image 4" class="gallery-item" data-index="4">
-        
-        <img src="/Screenshot_20240511-172116.jpg" width="85px" alt="Image 5" class="gallery-item" data-index="5">
-        
-        
-        <img src="/Screenshot_20240511-172047.jpg" width="85px" alt="Image 6" class="gallery-item" data-index="6">
-        
-        
-        <img src="/Screenshot_20240511-172017.jpg" width="85px" alt="Image 7" class="gallery-item" data-index="7">
-        
-        <img src="/Screenshot_20240511-171955.jpg" width="85px" alt="Image 8" class="gallery-item" data-index="8">
-         </div>
-               
-						<br>
-							<br>
-										<br>
-						
-        <button class="nav-button" id="back-to-gallery" onclick="closeGalleryModal()">Back to Gallery</button>
- 
-    
-    </section>
-    <div>
-           </div>         
-            
-            
-            
             
             
 
@@ -388,26 +371,14 @@ painting, and art education, Nyong has garnered acclaim both locally and interna
         
         <label for="phone">Phone:</label>
             <input type="tel" id="phone" name="phone" required>
-            	
-        
-    
-    
-    
-    
-    
-        
-   
-        
+            
         <br>
 		<br>
 						        
         
         <button type="submit" input type="submit" value="Send">Submit</button>
     </form>
-            <br>
-
-   
-        
+         <br>
         <br>
 		<br>
 										
@@ -420,46 +391,483 @@ painting, and art education, Nyong has garnered acclaim both locally and interna
             
       <!-- correct Contact Form Modal dont delete contain above-->
    
-   
-  
-				
-   
-   
-   
-   
-   
-   
-   
-   
-   
+ <script>
+ function toggleFooter() {
+        var footer = document.getElementById('myFooter');
+        footer.classList.toggle('show-footer');
+    }
     
     
-    <!-- Gallery Modal -->
-    	
-            <!-- Contact form or information goes here -->
-            	<!-- Contact Form Modal -->
-
-
-
-					<br>
-						<br>
-							<br>
-					<br>
-						<br>
-							<br>
-					
-							
-						
     
+    
+    
+    
+    // Disable right-click context menu
+    window.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+    
+    // Disable dragging of images
+    document.addEventListener('dragstart', function (e) {
+        e.preventDefault();
+    });
     	
     
     
-    <script src="script.js"></script>
     
     
     
-	    
+    	
+    
+        
+
+        function openContactForm() {
+            var contactModal = document.getElementById("contactModal");
+            contactModal.style.display = "block";
+        }
+
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "none";
+        }
+        
+        function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+    
+    function submitForm(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Get form data
+    var formData = new FormData(document.getElementById('registrationForm'));
+
+    // Dummy code to display form data
+    for (var pair of formData.entries()) {
+        console.log(pair[0] + ': ' + pair[1]);
+    }
+
+    // Dummy code to simulate form submission acknowledgment
+    alert('Thank you for registering! We have received your information.');
+
+    // Clear form fields after submission
+    document.getElementById('fullName').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('phone').value = '';
+
+    // Convert prize amounts from dollars to naira
+    var prizes = document.querySelectorAll('.prize');
+    prizes.forEach(function(prize) {
+        var amountInDollars = parseFloat(prize.textContent.replace('$', ''));
+        var amountInNaira = amountInDollars * 1000; // Assuming 1 USD = 1000 NGN
+        prize.textContent = '₦' + amountInNaira.toFixed(2);
+    });
+}
 
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const readMoreButtons = document.querySelectorAll('.read-more-btn');
+
+    readMoreButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.getAttribute('data-target');
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement.classList.contains('hidden')) {
+                targetElement.classList.remove('hidden');
+                this.textContent = 'Read Less';
+            } else {
+                targetElement.classList.add('hidden');
+                this.textContent = 'Read More';
+            }
+        });
+    });
+});
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Open modal function
+    window.openModal = function(modalId) {
+        document.getElementById(modalId).classList.remove('hidden');
+    };
+
+    // Close modal function
+    window.closeModal = function(modalId) {
+        document.getElementById(modalId).classList.add('hidden');
+    };
+
+    // Contact form submission
+    window.submitContactForm = function(event) {
+        event.preventDefault();
+        const form = document.getElementById('contactForm');
+        const confirmationMessage = document.getElementById('confirmationMessage');
+        
+        // Clear form
+        form.reset();
+        
+        // Show confirmation message
+        confirmationMessage.classList.remove('hidden');
+        
+        // Hide confirmation message after 3 seconds
+        setTimeout(() => {
+            confirmationMessage.classList.add('hidden');
+        }, 3000);
+        
+        // Close modal after 3 seconds
+        setTimeout(() => {
+            closeModal('contactFormModal');
+        }, 3000);
+    };
+
+
+    
+
+    // Live chat functionality
+    window.sendMessage = function() {
+        const chatInput = document.getElementById('chatInput');
+        const chatContent = document.querySelector('.chat-content');
+        const message = chatInput.value;
+        if (message.trim()) {
+            const messageElement = document.createElement('div');
+            messageElement.textContent = message;
+            chatContent.appendChild(messageElement);
+            chatInput.value = '';
+        }
+    };
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const galleryOverlay = document.getElementById('gallery-overlay');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    function openGalleryModal() {
+        galleryOverlay.style.display = 'flex';
+    }
+
+    function closeGalleryModal() {
+        galleryOverlay.style.display = 'none';
+    }
+
+    window.openGalleryModal = openGalleryModal;
+    window.closeGalleryModal = closeGalleryModal;
+});
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    let modal = document.getElementById('modal');
+    let modalImg = document.getElementById('modal-img');
+    let currentImageIndex = 0;
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const gallery = document.querySelector('.gallery');
+
+    galleryItems.forEach((item, index) => {
+        item.addEventListener('click', function() {
+            openModal(index);
+        });
+    });
+
+    document.querySelector('.close').addEventListener('click', closeModal);
+    document.getElementById('back').addEventListener('click', closeModal);
+
+    document.getElementById('prev').addEventListener('click', function() {
+        showImage(currentImageIndex - 1);
+    });
+
+    document.getElementById('next').addEventListener('click', function() {
+        showImage(currentImageIndex + 1);
+    });
+
+    modal.addEventListener('touchstart', handleTouchStart, false);
+    modal.addEventListener('touchmove', handleTouchMove, false);
+
+    let x1 = null;
+
+    function handleTouchStart(evt) {
+        const firstTouch = evt.touches[0];
+        x1 = firstTouch.clientX;
+    }
+
+    function handleTouchMove(evt) {
+        if (!x1) return;
+
+        let x2 = evt.touches[0].clientX;
+        let xDiff = x2 - x1;
+
+        if (xDiff > 0) {
+            showImage(currentImageIndex - 1); // swipe right
+        } else {
+            showImage(currentImageIndex + 1); // swipe left
+        }
+        x1 = null;
+    }
+
+    function openModal(index) {
+        modal.style.display = "block";
+        currentImageIndex = index;
+        showImage(currentImageIndex);
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    function showImage(index) {
+        if (index >= galleryItems.length) {
+            currentImageIndex = 0;
+        } else if (index < 0) {
+            currentImageIndex = galleryItems.length - 1;
+        } else {
+            currentImageIndex = index;
+        }
+        modalImg.src = galleryItems[currentImageIndex].src;
+    }
+
+    window.opengalleryModal = function() {
+        gallery.style.display = 'flex';
+    }
+});
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+            function showContent(sectionId) {
+                var preloader = document.getElementById('preloader');
+                var sections = document.querySelectorAll('.content-section');
+
+                preloader.style.display = 'none';
+
+                sections.forEach(function (section) {
+                    section.style.display = 'none';
+                });
+
+                var activeSection = document.getElementById(sectionId);
+                if (activeSection) {
+                    activeSection.style.display = 'block';
+                }
+            }
+
+            function hideContent() {
+                var preloader = document.getElementById('preloader');
+                var sections = document.querySelectorAll('.content-section');
+
+                sections.forEach(function (section) {
+                    section.style.display = 'none';
+                });
+
+                preloader.style.display = 'flex';
+            }
+
+            var navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent default anchor behavior
+
+                    var targetSection = link.getAttribute('href').substring(1);
+
+                    hideContent();
+
+                    setTimeout(function () {
+                        showContent(targetSection);
+                    }, 1000); // Simulate loading delay
+                });
+            });
+
+            // Show the initial content
+            setTimeout(function () {
+                showContent('home');
+            }, 1000); // Initial load delay
+        });
+
+
+
+// JavaScript will go here
+        const slides = document.querySelector('.slides');
+const images = document.querySelectorAll('.gallery-image');
+const prevButton = document.querySelector('.prev');
+const nextButton = document.querySelector('.next');
+const backToGalleryButton = document.querySelector('.back-to-gallery');
+
+let currentIndex = 0;
+let zoomedOut = false;
+let zoomedIn = false;
+
+function updateGallery() {
+    const offset = -currentIndex * 100;
+    slides.style.transform = `translateX(${offset}%)`;
+}
+
+prevButton.addEventListener('click', () => {
+    if (!zoomedIn) {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+        updateGallery();
+        resetZoom();
+    }
+});
+
+nextButton.addEventListener('click', () => {
+    if (!zoomedIn) {
+        currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+        updateGallery();
+        resetZoom();
+    }
+});
+
+images.forEach((image, index) => {
+    image.addEventListener('click', () => {
+        if (index === currentIndex) {
+            if (!zoomedOut && !zoomedIn) {
+                image.classList.add('zoom-out');
+                zoomedOut = true;
+            } else if (zoomedOut && !zoomedIn) {
+                image.classList.remove('zoom-out');
+                image.classList.add('zoom-in');
+                zoomedIn = true;
+                showBackToGalleryButton();
+            } else if (zoomedIn) {
+                image.classList.remove('zoom-in');
+                zoomedIn = false;
+                hideBackToGalleryButton();
+            }
+        } else {
+            image.classList.remove('zoom-out');
+            currentIndex = index;
+            updateGallery();
+            zoomedOut = false;
+            zoomedIn = false;
+            hideBackToGalleryButton();
+        }
+    });
+});
+
+function resetZoom() {
+    images.forEach(image => {
+        image.classList.remove('zoom-out', 'zoom-in');
+    });
+    zoomedOut = false;
+    zoomedIn = false;
+    hideBackToGalleryButton();
+}
+
+function showBackToGalleryButton() {
+    backToGalleryButton.style.display = 'block';
+}
+
+function hideBackToGalleryButton() {
+    backToGalleryButton.style.display = 'none';
+}
+
+backToGalleryButton.addEventListener('click', () => {
+    resetZoom();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+function openGalleryModal() {
+    document.getElementById('gallery-overlay').style.display = 'flex';
+}
+
+function closeGalleryModal() {
+    document.getElementById('gallery-overlay').style.display = 'none';
+}
+
+const gallery = document.querySelector('.gallery-container');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+gallery.addEventListener('mousedown', (e) => {
+    isDown = true;
+    gallery.classList.add('active');
+    startX = e.pageX - gallery.offsetLeft;
+    scrollLeft = gallery.scrollLeft;
+});
+
+gallery.addEventListener('mouseleave', () => {
+    isDown = false;
+    gallery.classList.remove('active');
+});
+
+gallery.addEventListener('mouseup', () => {
+    isDown = false;
+    gallery.classList.remove('active');
+});
+
+gallery.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - gallery.offsetLeft;
+    const walk = (x - startX) * 3; //scroll-fast
+    gallery.scrollLeft = scrollLeft - walk;
+});
+
+// Add zoom functionality for touch devices
+let scale = 1;
+gallery.addEventListener('touchstart', (e) => {
+    if (e.touches.length === 2) {
+        const distance = getDistance(e.touches[0], e.touches[1]);
+        gallery.dataset.initialDistance = distance;
+        gallery.dataset.initialScale = scale;
+    }
+});
+
+gallery.addEventListener('touchmove', (e) => {
+    if (e.touches.length === 2) {
+        const initialDistance = parseFloat(gallery.dataset.initialDistance);
+        const initialScale = parseFloat(gallery.dataset.initialScale);
+        const currentDistance = getDistance(e.touches[0], e.touches[1]);
+        scale = initialScale * (currentDistance / initialDistance);
+        gallery.style.transform = `scale(${scale})`;
+    }
+});
+
+function getDistance(touch1, touch2) {
+    const dx = touch1.pageX - touch2.pageX;
+    const dy = touch1.pageY - touch2.pageY;
+    return Math.sqrt(dx * dx + dy * dy);
+}
+
+// Navigation buttons
+document.querySelector('.prev').addEventListener('click', () => {
+    gallery.scrollLeft -= gallery.clientWidth;
+});
+
+document.querySelector('.next').addEventListener('click', () => {
+    gallery.scrollLeft += gallery.clientWidth;
+});
+
+
+    </script>
 </body>
 </html>
+
+
