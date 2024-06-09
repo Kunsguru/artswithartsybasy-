@@ -1,4 +1,4 @@
-* {
+    	* {
             box-sizing: border-box;
         }
         
@@ -7,15 +7,15 @@
             margin: 0;
             padding: 0;
             
-         -webkit-user-select: none;
-        -moz-user-select: none; 
-        -ms-user-select: none;
-        user-select: none;
+         -webkit-user-select: none; /* Safari */
+        -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* IE 10+/Edge */
+        user-select: none; /* Standard */
             
         }
         
         
-
+        /*------- to prevent users from copying intellectual property of the webpage----*/
         
         
         
@@ -118,6 +118,7 @@
 
 
 
+/*-------- to edit header slider --------*/
 
        .gallery-overlay {
     display: none; /* Hidden by default */
@@ -499,12 +500,12 @@ button {
 }
 
 .gallery-wrapper {
-	
+	gap: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 80%; 
+    height: 80%; /* Leave space for the back button */
     position: relative;
 }
 
@@ -564,13 +565,17 @@ button {
     background-color: #2CAF30;
     border: none;
 }
-
-
-#contestSection {
-      
+    
+    
+    
+    #contestSection {
+      /* Just to illustrate scrolling */
     }
 
     #gallerySection {
-       
+       /* Just to illustrate scrolling */
     }
     
+    
+
+
