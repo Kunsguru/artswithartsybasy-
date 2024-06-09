@@ -1,4 +1,4 @@
-	* {
+    	* {
             box-sizing: border-box;
         }
         
@@ -575,5 +575,7 @@ button {
     #gallerySection {
        /* Just to illustrate scrolling */
     }
+    
+    
 
 
