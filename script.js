@@ -472,3 +472,10 @@ document.querySelector('.next').addEventListener('click', () => {
 });
 
 
+function handleClick() {
+    alert('Redirecting You, Our dearest customer to our Official Web Form Page ...');
+    window.location.href = 'https://arts-with-artsbassey-registration-form.onrender.com';
+}
+
+
+
