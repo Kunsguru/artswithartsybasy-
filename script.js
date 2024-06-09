@@ -477,7 +477,14 @@ function handleClick() {
     window.location.href = 'https://arts-with-artsbassey-registration-form.onrender.com';
 }
 
-function handleClick() {
+
+
+function handleRegistrationClick() {
+    alert('Redirecting You, Our dearest customer to our Official Web Form Page ...');
+    window.location.href = 'https://arts-with-artsbassey-registration-form.onrender.com';
+}
+
+function handleContactClick() {
     alert('Redirecting You, Our dearest customer to our Official Web Contact Form Page ...');
     window.location.href = 'https://artswithartsybasy-contact-form.onrender.com';
 }
