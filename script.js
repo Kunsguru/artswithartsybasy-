@@ -486,7 +486,7 @@ function handleRegistrationClick() {
 
 function handleContactClick() {
     alert('Redirecting You, Our dearest customer to our Official Web Contact Form Page ...');
-    window.location.href = 'https://artswithartsybasy-contact-form.onrender.com';
+    window.location.href = 'https://contact-form-frontend0.onrender.com';
 }
 
 
