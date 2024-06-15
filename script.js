@@ -472,21 +472,36 @@ document.querySelector('.next').addEventListener('click', () => {
 });
 
 
-function handleClick() {
+function handleClick34783466() {
     alert('Redirecting You, Our dearest customer to our Official Web Form Page ...');
     window.location.href = 'https://arts-with-artsbassey-registration-form.onrender.com';
 }
 
 
 
-function handleRegistrationClick() {
+function handleRegistrationClick3534235() {
     alert('Redirecting You, Our dearest customer to our Official Web Form Page ...');
     window.location.href = 'https://arts-with-artsbassey-registration-form.onrender.com';
 }
 
-function handleContactClick() {
+function handleContactClick112241() {
     alert('Redirecting You, Our dearest customer to our Official Web Contact Form Page ...');
     window.location.href = 'https://contact-form-frontend0.onrender.com';
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('summitButton').addEventListener('click', function() {
+        console.log('Button clicked'); // Debug log
+        var email = 'artsbasseyartsbassey@gmail.com';
+        var subject = 'Contact Office';
+        var body = 'Hello Sir/Ma,\n\nI would like to make further inquiry.\n\nThank you.';
+        
+        var mailtoLink = 'mailto:' + email + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+        console.log(mailtoLink); // Debug log
+        
+        window.location.href = mailtoLink;
+    });
+});
 
 
