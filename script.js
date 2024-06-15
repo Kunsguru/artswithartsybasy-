@@ -483,7 +483,7 @@ document.querySelector('.next').addEventListener('click', () => {
 
 function handleRegistrationClick() {
     alert('Redirecting You, Our dearest customer to our Official Web Form Page ...');
-    window.location.href = 'https://project12345.onrender.com/';
+    window.location.href = 'https://project12345.onrender.com';
 }
 
 function handleContactClick() {
