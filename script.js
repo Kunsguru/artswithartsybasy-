@@ -486,9 +486,3 @@ function handleRegistrationClick() {
     window.location.href = 'https://project12345.onrender.com';
 }
 
-function handleContactClick() {
-    alert('Redirecting You, Our dearest customer to our Official Web Contact Form Page ...');
-    window.location.href = 'https://project12345.onrender.com/';
-}                                                                                                      
-            
-                
