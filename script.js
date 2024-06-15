@@ -492,3 +492,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+
+
+
+
+                    function handleClick() {
+    alert('Redirecting You, Our dearest customer to our Official Web Form Page ...');
+    window.location.href = 'https://arts-with-artsbassey-registration-form.onrender.com';
+}
+
+
+
+function handleRegistrationClick() {
+    alert('Redirecting You, Our dearest customer to our Official Web Form Page ...');
+    window.location.href = 'https://arts-with-artsbassey-registration-form.onrender.com';
+}
+
+function handleContactClick() {
+    alert('Redirecting You, Our dearest customer to our Official Web Contact Form Page ...');
+    window.location.href = 'https://artswithartsybasy-contact-form.onrender.com';
+}                                                                                                      
+            
+                
